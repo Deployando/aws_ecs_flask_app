@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:us-east-1:111222333444:task-definition/my-task-definition-family-name:1"
+        TaskDefinition: "arn:aws:ecs:us-east-1:111222333444:task-definition/demo-flask-app-task:1"
         LoadBalancerInfo:
-          ContainerName: "SampleApplicationName"
+          ContainerName: "demo-flask-app-container"
           ContainerPort: 80
